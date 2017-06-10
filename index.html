@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Convertion</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+
+  <body>
+    <h1>Convertisseur de devises</h1>
+    <form onsubmit="convert(); return false">
+      <fieldset>
+        <legend>
+          Convertisseur
+        </legend>
+        <input id='somme' type="text" value=""/>
+        <select id='monnaie_dep' name='monnaie_dep' size='1'>
+          <option value="EUR" selected>
+            Euros
+          </option>
+          <option value="USD">
+            Dollars
+          </option>
+          <option value="GPB">
+            Livres britannique
+          </option>
+        </select>
+        en
+        <select id='monnaie_arr' name='monnaie_arr' size='1'>
+          <option value="EUR">
+            Euros
+          </option>
+          <option value="USD" selected>
+            Dollars
+          </option>
+          <option value="GPB">
+            Livres britannique
+          </option>
+        </select>
+        <input value="Convertir" type='button' onclick="convert()"/>
+        <br/>
+        <br/>
+        <p id='result'>
+          <br/>
+        </p>
+      </fieldset>
+    </form>
+    <div id='result_div'></div>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>
